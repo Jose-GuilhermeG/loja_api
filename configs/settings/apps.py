@@ -13,6 +13,8 @@ INSTALLED_APPS = [
 ]
 
 PROJECT_APPS = [
+    'core',
+    'product',
 ]
 
 INSTALLED_APPS += PROJECT_APPS
