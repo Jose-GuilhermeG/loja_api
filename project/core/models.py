@@ -16,4 +16,4 @@ class Can_Be_Monitored(models.Model):
     
     class Meta:
         ordering = ['-created_at']
-        abstrac = True
+        abstract = True
