@@ -1,0 +1,14 @@
+#cache 
+__pycache__
+*pyc
+.pytest_cache
+
+#ambiente
+.env
+
+#db
+db.sqlite3
+
+#projeto
+*/migrations/*
+!*/migrations/__init__.py
