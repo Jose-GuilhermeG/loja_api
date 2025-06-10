@@ -12,3 +12,5 @@ db.sqlite3
 #projeto
 **/migrations/**
 !**/migrations/__init__.py
+images
+media

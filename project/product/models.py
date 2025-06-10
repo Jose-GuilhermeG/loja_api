@@ -28,3 +28,10 @@ class Product(Can_Be_Monitored):
         blank=True
     )
     
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name = _("Produto")
+        verbose_name_plural = _("Produtos")
+    
