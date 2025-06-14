@@ -3,7 +3,6 @@ services:
     build:
       context: .
       dockerfile: ./compose/django/dockerfile
-    command : python manage.py runserver 0.0.0.0:8000
     entrypoint: ./scripts/entrypoint.sh
     ports:
       - "8000:8000"
@@ -20,12 +19,12 @@ services:
     ports : 
       - "3306:3306"
     environment:
-      - MYSQL_ROOT_PASSWORD=01112007
+      - MYSQL_ROOT_PASSWORD=$(ROOT_PASS)
     volumes:
       - mysql-django:/var/lib/mysql/
     networks:
       - project-net
-
+      
 networks:
   project-net:
 
