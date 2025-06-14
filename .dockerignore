@@ -3,7 +3,9 @@ __pycache__
 *pyc
 .pytest_cache
 
-#git
+#git e github
+.env.dev_exemple
+.env_exemple
 .gitignore
 .git
 readme.md
@@ -17,6 +19,7 @@ ENV
 #project
 media
 images
+image
 compose
 **/migrations/**
 !**/migrations/__init__.py
