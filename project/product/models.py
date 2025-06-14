@@ -11,6 +11,13 @@ class Product(Can_Be_Monitored):
         unique=True
     )
     
+    slug = models.SlugField(
+        _("Slug do produto"),
+        unique=True,
+        null=False,
+        blank=False
+    )
+    
     price = models.DecimalField(
         verbose_name = _("Preço do produto"),
         max_digits=10,
